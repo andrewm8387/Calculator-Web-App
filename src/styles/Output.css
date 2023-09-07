@@ -1,0 +1,12 @@
+.output {
+    padding: 0;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.output > h1 {
+    margin: 0;
+}
