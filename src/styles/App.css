@@ -1,8 +1,39 @@
 .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 50px auto;
     width: 500px;
     height: 500px;
     border-radius: 25px;
     background-color: gray;
     padding: 40px 10px;
+}
+
+.buttons {
+    display: grid;
+    grid: auto auto auto auto auto / 100px 100px 100px 100px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: greenyellow;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: outset 5px;
+    border-radius: 15px;
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    padding: 0;
+}
+
+.button > h1 {
+    margin: auto;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
 }

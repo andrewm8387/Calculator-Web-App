@@ -9,4 +9,6 @@
 
 .output > h1 {
     margin: 0;
+    text-align: right;
+    height: 38px;
 }
