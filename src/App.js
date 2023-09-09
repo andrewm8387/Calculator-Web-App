@@ -94,6 +94,7 @@ function App() {
           <div className="buttons">
               {icons.map((icon) => (<Button icon={icon.icon} func={() => modifyOutput(icon.icon)}/>))}
           </div>
+          
       </main>
     );
 }
