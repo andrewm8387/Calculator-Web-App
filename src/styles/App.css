@@ -3,11 +3,13 @@
     flex-direction: column;
     justify-content: center;
     margin: 50px auto;
-    width: 500px;
-    height: 500px;
+    width: max-content;
+    height: max-content;
     border-radius: 25px;
     background-color: gray;
     padding: 40px 10px;
+    border: outset 10px;
+    box-shadow: 0 0 10px black;
 }
 
 .buttons {

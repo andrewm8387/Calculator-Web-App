@@ -72,11 +72,15 @@ function App() {
                 setOutput("")
                 break
             case "←":
-                setOutput(prevState => prevState.slice(0, -1))
+                setOutput(prevState => prevState.toString().slice(0, -1))
                 break
             case "=":
                 setOutput(prevState => {
-                    return eval(prevState.replace("×","*").replace("−","-"))
+                    try {
+                        return eval(prevState.toString().replace("×","*").replace("−","-"))
+                    } catch (e) {
+                        return "Error"
+                    }
                 })
                 break
             default:
